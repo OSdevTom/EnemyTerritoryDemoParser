@@ -19,6 +19,7 @@ def demo_to_dataframe_parser(df):
 
     df["last_5_velocity_x_sum"] = df.velocity_player_x.rolling(5).sum().shift(1)
     test
+    ok now i create a new branch
     df["last_5_velocity_x_mean"] = df.velocity_player_x.rolling(5).mean().shift(1)
     df["last_5_velocity_x_var"] = df.velocity_player_x.rolling(5).var().shift(1)
 
